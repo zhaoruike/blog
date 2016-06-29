@@ -12,8 +12,8 @@
         document.documentElement.style.fontSize =winH/ 2200 * 100 + "px";
     }
 }();
-var tohave=document.getElementById("tohave");
-var bottom=document.getElementById("bottom");
+var tohave=document.getElementsByClassName("tohave");
+var bottom=document.getElementsByClassName("bottom");
 new Swiper(".swiper-container", {
     loop: true,
     direction: "vertical",
@@ -29,9 +29,13 @@ function changeEnd(swiper) {
             if(n===1||n===5){
 
                 slide.id="page1"
-                tohave.onclick=function(){
+                tohave[0].onclick=function(){
                     console.log(1)
-                    bottom.style.display="block"
+                    bottom[0].style.display="block"
+                }
+                tohave[1].onclick=function(){
+                    console.log(1)
+                    bottom[1].style.display="block"
                 }
                 return
             }
