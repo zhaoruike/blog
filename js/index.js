@@ -41,7 +41,8 @@ function changeEnd(swiper) {
             }
             if(n===2){
                 slide.id="page2";
-                bottom.style.display="none"
+                bottom[1].style.display="none"
+                bottom[0].style.display="none"
                 return
             }
             if(n===3){
@@ -50,6 +51,8 @@ function changeEnd(swiper) {
             }
             if(n===4||n===0){
                 slide.id="page4";
+                bottom[1].style.display="none"
+                bottom[0].style.display="none"
                 return
             }
         }
